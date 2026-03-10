@@ -1,86 +1,43 @@
-/* ========== COMMON ========== */
-html {
-  scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
 }
 
 body {
-  font-family: var(--font-primary);
-  color: rgb(var(--text-color-primary) / 0.5);
-  background-color: rgb(var(--bg-color-primary));
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  margin: 0;
 }
 
-body.is-menu-open {
-  overflow: hidden;
-  touch-action: none;
-  height: 100vh;
+.task-list {
+  display: flex;
+  /* gap: 24px; */
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  margin: 24px;
+
+  background-color: greenyellow;
+  color: blue;
 }
-
-section[id] {
-  scroll-margin-top: 50px;
-}
-
-.section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.container {
-  width: 100%;
-  max-width: 375px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  section[id] {
-    scroll-margin-top: 50px;
-  }
-
-  .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .section {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
-
-  .container {
-    max-width: 1280px;
-    padding-left: 128px;
-    padding-right: 128px;
-  }
-}
-
-/* ========== /COMMON ========== */
